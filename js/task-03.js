@@ -18,12 +18,10 @@ const images = [
 const listGalery = document.querySelector(".gallery");
 
 function listItemImg(images, listGalery){
-  const itemGalery = images 
-  .map(({url, alt}) => 
+  const itemGalery = images.map(({url, alt}) => 
   `<li class = "foto"><img src = "${url}" alt ="${alt}"></img></li>`
-  )
-.join("");
+  ).join("");
 listGalery.insertAdjacentHTML("beforeend", itemGalery);
 }
-// console.log(images);
+
 listItemImg(images, listGalery);

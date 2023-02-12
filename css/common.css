@@ -25,6 +25,7 @@ button {
 .gallery {
   display: flex;
     gap: 10px;
+    list-style: none;
 }
 .foto {
   width: 320px;
